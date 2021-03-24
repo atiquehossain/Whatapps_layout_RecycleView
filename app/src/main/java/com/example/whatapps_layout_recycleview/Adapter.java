@@ -3,6 +3,8 @@ package com.example.whatapps_layout_recycleview;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -28,15 +30,39 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull Adapter.ViewHolder holder, int position) {
+        int resource =userList.get(position).getImageview();
+        String name=userList.get(position).getTextviewOne();
+        String msg =userList.get(position).getTextthree();
+        String time =userList.get(position).getTextviewtwo();
+        String line=userList.get(position).getDevider();
+        holder.setData(resource,name,msg,time,line);
+
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+
+        return userList.size();
     }
 
-    public class ViewHolder {
+    public class ViewHolder extends  RecyclerView.ViewHolder{
+
+        private ImageView imageView;
+        private TextView textView;
+        private  TextView textViewTwo;
+        private TextView textviewthree;
+        private  TextView devider;
+
+        public ViewHolder(@NonNull View ItemView){
+            super(ItemView);
+
+
+            imageView= itemView.findViewById(R.id.imageview);
+            textView=itemView.findViewById(R.id.textview);
+            textViewTwo=itemView.findViewById(R.id.textview2);
+            textviewthree = itemView.findViewById(R.id.textview3);
+            devider=itemView.findViewById(R.id.divider);
     }
 }
 }

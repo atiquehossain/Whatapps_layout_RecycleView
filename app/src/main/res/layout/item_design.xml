@@ -66,6 +66,19 @@
 
         </TextView>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="-------------------------------------------------------------------"
+            android:textColor="#CDC7C7"
+            android:id="@+id/divider"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/imageview1"
+            android:layout_below="@+id/textview">
+
+        </TextView>
+
 
     </RelativeLayout>
 
