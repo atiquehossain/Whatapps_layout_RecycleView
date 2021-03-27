@@ -17,7 +17,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     private List<ModelClass> userList;
 
 
-    public Adapter(List<ModelClass> userList) {
+    public Adapter(List<ModelClass> userList)
+    {
         this.userList = userList;
     }
 
