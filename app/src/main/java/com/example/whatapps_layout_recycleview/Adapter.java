@@ -67,5 +67,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             textviewthree = itemView.findViewById(R.id.textview3);
             devider=itemView.findViewById(R.id.divider);
     }
-}
+
+        public void setData(int resource, String name, String msg, String time, String line) {
+        }
+    }
 }
