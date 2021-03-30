@@ -1,5 +1,7 @@
 package com.example.whatapps_layout_recycleview;
 
+
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -69,6 +71,15 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     }
 
         public void setData(int resource, String name, String msg, String time, String line) {
+
+
+            imageView.setImageResource(resource);
+            textView.setText(name);
+            textViewTwo.setText(msg);
+            textviewthree.setText(time);
+            devider.setText(line);
+
+
         }
     }
 }
